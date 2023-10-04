@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Albert </title>
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100;0,9..40,200;0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;0,9..40,800;0,9..40,900;0,9..40,1000;1,9..40,100;1,9..40,200;1,9..40,300;1,9..40,400;1,9..40,500;1,9..40,600;1,9..40,700;1,9..40,800;1,9..40,900;1,9..40,1000&family=Inclusive+Sans:ital@0;1&display=swap"
+        rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arvo&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <nav>
+        <div class="navDiv">
+            <p>Albert Einstein</p>
+        </div>
+        <div class="menu halfDiv">
+            <a href="#about">About</a>
+            <a href="#papers">Papers</a>
+            <a href="#hobbies">Hobbies</a>
+            <a href="#blog">Blog</a>
+            <a href="#images">Images</a>
+
+        </div>
+    </nav>
+    <section>
+        <div class="flex">
+
+            <div class="halfdiv  center-content">
+                <img src="einstein.png" alt="" class="myimage">
+            </div>
+            <div class="halfdiv" id="about">
+                <h2>About Me</h2>
+                <p class="para">Albert Einstein was a German-born theoretical physicist, widely held to be one of the
+                    greatest and most influential scientists of all time. Best known for developing the theory of
+                    relativity, he also made important contributions to quantum mechanics, and was thus a central figure
+                    in the revolutionary reshaping of the scientific understanding of nature that modern physics
+                    accomplished in the first decades of the twentieth century. His mass–energy equivalence formula E =
+                    mc2, which arises from relativity theory, has been called "the world's most famous equation".He
+                    received the 1921 Nobel Prize in Physics "for his services to theoretical physics, and especially
+                    for his discovery of the law of the photoelectric effect",a pivotal step in the development of
+                    quantum theory. His work is also known for its influence on the philosophy of science.In a 1999 poll
+                    of 130 leading physicists worldwide by the British journal Physics World, Einstein was ranked the
+                    greatest physicist of all time. His intellectual achievements and originality have made the word
+                    Einstein broadly synonymous with genius.</p>
+            </div>
+        </div>
+    </section>
+
+    <div class="container" id="papers">
+        <h2>Papers</h2>
+        <div class="box  ">
+
+            <img src="paper_1.jpg"" class=" image ">
+        <p>This is my paper about Relativity </p>
+        </div>
+        
+        <div class=" box">
+            <img src="paper_2.jpg" alt="" class="image">
+            <p>This is ony of my paper</p>
+        </div>
+
+        <div class="box">
+            <img src="paper_3.jpg" alt="" class="image">
+            <p>This is also my paper
+            <p>
+        </div>
+
+
+    </div>
+    <section>
+        <div class="flex">
+            <div class="halfdiv" id="hobbies">
+                <h2>Hobbies</h2>
+                <ul>
+                    <li>Puzzles</li>
+                    <li>Reading books about nature</li>
+                    <li>Playing violin</li>
+                    <li>Solving math problems</li>
+                </ul>
+            </div>
+            <div class="halfdiv" id="blog">
+                <h2>Blog</h2>
+                <article>
+                    <input type="text" id="myTextbox" placeholder="Enter your blog">
+                    <button id="myButton">Post</button>
+                    <li>In 1905, Einstein developed a theory of Brownian motion in terms of fluctuations in the number of
+                        molecular collisions with an object,[4] providing further evidence that matter was composed of
+                        atoms. A few weeks earlier, he had derived the Einstein relation for diffusion, which was the first
+                        example of the general fluctuation-dissipation theorem and allowed a good estimate of the Avogadro
+                        constant.[5]</li>
+                    
+                </article>
+            </div>
+        </div>
+    </section>
+    <section id="images">
+        <h2>Images</h2>
+        <div class="flex images">
+            <img src="image_1.jpeg" alt="">
+            <img src="image_2.jpeg" alt="">
+            <img src="image_3.jpeg" alt="">
+            <img src="image_4.jpeg" alt="">
+        </div>
+    </section>
+    <footer>
+        <div class="navDiv">
+            <p>Albert Einstein</p>
+        </div>
+        <div class=" ">
+            <div class="menu">
+                <a href="#about">About</a>
+                <a href="#papers">Papers</a>
+                <a href="#hobbies">Hobbies</a>
+                <a href="#blog">Blog</a>
+                <a href="#images">Images</a>
+            </div>
+            <div>
+                <span class="blod-text">Contact Me</span>
+                <span>albert@gmail.com</span>
+
+
+            </div>
+
+        </div>
+    </footer>
+
+
+</body>
+<script>
+ 
+    const myButton = document.getElementById('myButton');
+    const myTextbox = document.getElementById('myTextbox');
+    myButton.addEventListener('click', function() {
+        alert('You entered: ' + myTextbox.value);
+    });
+</script>
+
+</html>
